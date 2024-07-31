@@ -1,0 +1,33 @@
+   Start
+     |
+Load Data
+     |
+Define Parameters
+     |
+Calculate Moving Averages
+     |
+Generate Signals
+     |
+Initialize Portfolio
+     |
+Optimize Parameters (Loop)
+     |
++------------------------+
+|     Loop Start         |
+|         |              |
+|   Reset Portfolio      |
+|         |              |
+|   Simulate Trading     |
+|         |              |
+|Calculate Final Portfolio|
+|         | Value        |
+|         v              |
++------------------------+
+     |
+Select Best Parameters
+     |
+Simulate Trading with Best Parameters
+     |
+End of Simulation
+     |
+    End

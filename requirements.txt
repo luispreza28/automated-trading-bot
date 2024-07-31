@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+requests
+scikit-learn
+yfinance
+alpaca_trade_api
