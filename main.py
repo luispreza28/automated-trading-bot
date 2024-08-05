@@ -26,16 +26,17 @@ def main():
     portfolio = trading_strategy(new_data)
     review_performance(portfolio)
 
-    cash = check_buying_power(api)
+    cash = check_buying_power(api, symbol)
     print(f"Buying power: {cash}")
     trade = api.get_latest_trade(symbol)
     latest_price = trade.price
     print(f"current price: {latest_price}")
-    shares = calculate_shares(cash, latest_price, 0.01)
+    print(f"Cash: {cash}, latest price: {latest_price}")
+    shares = calculate_shares(cash[0], latest_price, 0.01)
     execute_trade(1, symbol, shares, api)
     time.sleep(60)
     execute_trade(-1, symbol, shares, api)
-    monitor_portfolio(symbol)
+    monitor_portfolio(symbol, api)
 
 
 if __name__ == '__main__':
